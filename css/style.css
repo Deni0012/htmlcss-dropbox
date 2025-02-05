@@ -5,3 +5,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header */
+
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.top-bar nav {
+    padding: 15px;
+    display: flex;
+    text-align: center;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    color: black;
+}
+
+.d-flex {
+    display: flex;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header .topbar {
+    display: flex;
+    align-items: center;
+
+}
+
+header .topbar>div.logo,
+header .topbar>div.login {
+    width: 240px;
+    flex-shrink: 0;
+
+}
+
+header .topbar>.menu {
+    flex-grow: 1;
+
+}
+
+header .topbar>.login {
+    text-align: right;
+}
+
+.inizia {
+    text-align: right;
+    border-color: #0061fe;
+    border-radius: 70px 30px;
+}
+
+
+header .menu ul {
+    gap: 80px;
+    justify-content: center;
+}
+
+
+.container {
+    margin: 0 auto;
+}
+
