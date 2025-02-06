@@ -24,7 +24,7 @@ header {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px 0px #999;
+    box-shadow: 0 1px 3px 0px #ddd;
 }
 
 header ul {
@@ -37,22 +37,27 @@ ul {
     list-style-type: none;
 }
 
-a {
+header a {
     text-decoration: none;
     color: black;
 }
 
+.container {
+    width: 1190px;
+    margin: 0 auto;
+}
 
-.inizia {
+.button {
+    display: inline-block;
     text-align: right;
     background-color: #0061fe;
     color: #ffffff;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     cursor: pointer;
 }
 
-.inizia:hover {
+.button:hover {
    filter: brightness(1.4);
 }
 
@@ -67,11 +72,163 @@ a {
     display: flex;
 }
 
-#jumbotron .jumboleft {
+#jumbotron .left {
     width: 30%;
+}
+
+#jumbotron .right {
+    width: 70%;
 }
 
 #jumbotron .container {
     position: relative;
     top: 100px;
+}
+
+.title {
+    font-size: 80px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+/* main */
+
+/* Toggle fatturazione */
+.billing-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.toggle-option {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.toggle-option.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Griglia piani */
+.plan-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.plan h3 {
+    font-size: 20px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 16px;
+    color: #666;
+}
+
+
+
+.acquista {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.acquista a {
+    color: #007bff;
+}
+
+.highlights {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.highlights p {
+    margin-bottom: 5px;
+}
+
+/* Enterprise Extra */
+.enterprise-extra {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 50%;
+    margin: 30px auto 0;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+}
+
+.enterprise-extra #bold {
+    font-weight: bold;
+}
+
+/* partner-image */
+
+.partner {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    gap: 20px;
+    border-bottom: 1px dashed #000;
+}
+
+.partner-image {
+    width: 50%;
+    height: 200px;
+    background-color: #ddd;
+}
+
+.partner-text {
+    width: 50%;
+}
+
+/* footer */
+
+footer {
+    background-color: #000;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 20%;
+}
+
+.column h4 {
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style-type: none;
+}
+
+.column ul li a {
+    margin-bottom: 5px;
+    color: white;
 }
